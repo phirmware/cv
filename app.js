@@ -4,7 +4,7 @@ app.use(express.static(__dirname + '/views'));
 
 
 app.get('/', (req, res) => {
-    res.sendFile('index.html');
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 app.listen(3000, () => {
